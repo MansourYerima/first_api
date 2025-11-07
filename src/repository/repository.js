@@ -1,17 +1,17 @@
-export class Repository {
-  save(param) {
-    
+export default class Repository {
+  constructor() {
+    if (new.target == Repository) {
+      throw new Error("No instance of this classe");
+    } else {
+    }
   }
 
-  delete(id) {
-
+  save(object) {
+    throw new Error("");
   }
 
-  find(id) {
+  delete(id) {}
 
-  }
-
-  getAll() {
-
-  }
+  find(id) {}
+  findAll() {}
 }
