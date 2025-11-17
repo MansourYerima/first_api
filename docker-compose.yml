@@ -1,0 +1,7 @@
+#Definition des services laravel et postgres
+services:
+  node:
+    build: . #Creer une image a partir du Dockerfile courant
+    image: firstnode
+    ports:
+      - "8000:3000"
